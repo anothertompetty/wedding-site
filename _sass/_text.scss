@@ -1,0 +1,43 @@
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $font-primary-light;
+  font-size: $text-medium;
+  line-height: $line-height-medium;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  margin: 0;
+}
+
+.text-medium {
+  font-size: $text-medium;
+  line-height: $line-height-medium;
+  margin-bottom: $text-medium / 2;
+}
+
+.text-large {
+  font-family: $font-primary-light;
+  font-size: $text-large;
+  line-height: $line-height-large;
+  margin-bottom: $text-large / 2;
+}
+
+.text-heavy {
+  font-family: $font-primary-bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Links
+
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+  color: $color-text;
+}

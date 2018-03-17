@@ -1,0 +1,84 @@
+// menu
+
+.menu {
+  position: fixed;
+  width: 100%;
+  padding: $space-medium;
+  background-color: $color-base;
+  text-align: center;
+}
+
+@media screen and (max-width: $width-medium) {
+  .menu {
+    display: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  display: inline-block;
+  margin-right: $space-small;
+}
+
+li:last-of-type {
+  margin-right: 0;
+}
+
+// header
+
+.header {
+  padding: $space-x-large 0;
+  background-color: $color-base;
+  text-align: center;
+}
+
+// sections
+
+.section {
+  margin-top: $space-large;
+  margin-bottom: $space-large;
+}
+
+.section--middle {
+  max-width: 790px;
+  text-align: center;
+}
+
+.section_inline {
+  display: inline-block;
+  width: 440px;
+  vertical-align: top;
+  margin-top: $space-medium;
+}
+
+.section_inline--left {
+  margin-right: $space-small;
+}
+
+.section_inline--right {
+  margin-left: $space-small;
+}
+
+@media screen and (max-width: $width-full - 1) {
+  .section_inline {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 $space-small;
+  }
+}
+
+hr {
+  max-width: 300px;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: $space-large;
+  border: 0;
+  background-color: $color-text;
+}

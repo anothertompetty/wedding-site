@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'apercu_light';
+  // src: url('/fonts/GTWalsheimRegular.eot');
+  src: url('/fonts/apercu_light.woff2') format('woff2'),
+       url('/fonts/apercu_light.woff') format('woff'),
+       url('/fonts/apercu_light.ttf') format('truetype');
+       // url('/fonts/apercu_bold.svg#apercu_bold') format('svg'),
+       // url('/fonts/apercu_bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu_regular';
+  // src: url('/fonts/GTWalsheimRegular.eot');
+  src: url('/fonts/apercu_regular.woff2') format('woff2'),
+       url('/fonts/apercu_regular.woff') format('woff'),
+       url('/fonts/apercu_regular.ttf') format('truetype');
+       // url('/fonts/apercu_bold.svg#apercu_bold') format('svg'),
+       // url('/fonts/apercu_bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu_bold';
+  // src: url('/fonts/GTWalsheimRegular.eot');
+  src: url('/fonts/apercu_bold.woff2') format('woff2'),
+       url('/fonts/apercu_bold.woff') format('woff'),
+       url('/fonts/apercu_bold.ttf') format('truetype');
+       // url('/fonts/apercu_bold.svg#apercu_bold') format('svg'),
+       // url('/fonts/apercu_bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
