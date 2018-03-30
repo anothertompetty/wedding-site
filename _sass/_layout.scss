@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $text-medium;
+  font-weight: normal;
+  line-height: $line-height-small;
+  color: $color-text;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  width: 100%;
+}
+
+.site-wrapper {
+  max-width: $width-full;
+  margin: 0 auto;
+  padding-left: $space-x-small;
+  padding-right: $space-x-small;
+}
+
+@media screen and (max-width: $width-full - 1) {
+  .site-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $space-small;
+  }
+}

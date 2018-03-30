@@ -1,0 +1,67 @@
+h1 {
+  font-family: $font-headline;
+  font-size: 100px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 80px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 80px;
+    line-height: 70px;
+  }
+}
+
+h2 {
+  font-family: $font-primary-light;
+  font-size: $text-medium;
+  line-height: $line-height-medium;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  margin: 0;
+}
+
+.header_content h2 {
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_content h2 {
+    margin-top: -40px;
+  }
+}
+
+.text-medium {
+  font-size: $text-medium;
+  line-height: $line-height-medium;
+  margin-bottom: $text-medium / 2;
+}
+
+.text-large {
+  font-family: $font-primary-light;
+  font-size: $text-large;
+  line-height: $line-height-large;
+  margin-bottom: $text-large / 2;
+}
+
+.text-heavy {
+  font-family: $font-primary-bold;
+}
+
+@media screen and (min-width: 480px) {
+  .text-center {
+    text-align: center;
+  }
+}
+
+// Links
+
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+  color: $color-text;
+}
