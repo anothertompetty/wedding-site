@@ -2,6 +2,8 @@
 
 .menu {
   position: fixed;
+  top: 0;
+  display: none;
   width: 100%;
   padding: $space-medium;
   background-color: $color-base;
@@ -10,8 +12,41 @@
 
 @media screen and (max-width: $width-medium) {
   .menu {
-    display: none;
+    visibility: hidden;
   }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -1000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation: bounceInDown 1s;
+  display: none;
 }
 
 ul {
@@ -33,9 +68,26 @@ li:last-of-type {
 // header
 
 .header {
-  padding: $space-x-large 0;
-  background-color: $color-base;
+  width: 100%;
+  height: 560px;
+  z-index: -1;
+  background: url(../img/wedding_hero.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: center;
+}
+
+.header_content {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_content {
+    margin-top: 10px;
+  }
 }
 
 // sections
@@ -45,9 +97,24 @@ li:last-of-type {
   margin-bottom: $space-large;
 }
 
-.section--middle {
+.section--intro {
   max-width: 790px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section--intro {
+    text-align: left;
+  }
+}
+
+.section--middle {
+  max-width: 600px;
+  text-align: center;
+}
+
+.section--middle h2 {
+  margin-bottom: $space-medium;
 }
 
 .section_inline {
@@ -66,11 +133,27 @@ li:last-of-type {
 }
 
 @media screen and (max-width: $width-full - 1) {
+  .section {
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
+  }
+
   .section_inline {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0 $space-small;
+    padding: 0;
+  }
+
+  .section--middle {
+    text-align: left;
+    max-width: 480px;
+  }
+
+  .section--middle p,
+  .section_inline--left,
+  .section_inline--right {
+    margin-top: $space-medium;
   }
 }
 
@@ -81,4 +164,17 @@ hr {
   margin-top: $space-large;
   border: 0;
   background-color: $color-text;
+}
+
+@media screen and (max-width: $width-full - 1) {
+  hr {
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  hr {
+    max-width: 100%;
+    margin-top: $space-medium;
+  }
 }

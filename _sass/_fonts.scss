@@ -33,3 +33,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'dk_mandarin_whispers';
+  // src: url('/fonts/GTWalsheimRegular.eot');
+  src: url('/fonts/dk_mandarin_whispers.woff2') format('woff2'),
+       url('/fonts/dk_mandarin_whispers.woff') format('woff'),
+       url('/fonts/dk_mandarin_whispers.ttf') format('truetype');
+       // url('/fonts/dk_mandarin_whispers.svg#dk_mandarin_whispers') format('svg'),
+       // url('/fonts/dk_mandarin_whispers.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

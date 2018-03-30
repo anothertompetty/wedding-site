@@ -1,6 +1,18 @@
 h1 {
+  font-family: $font-headline;
+  font-size: 100px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 80px;
   color: white;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 80px;
+    line-height: 70px;
+  }
 }
 
 h2 {
@@ -10,6 +22,16 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2.3px;
   margin: 0;
+}
+
+.header_content h2 {
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_content h2 {
+    margin-top: -40px;
+  }
 }
 
 .text-medium {
@@ -29,8 +51,10 @@ h2 {
   font-family: $font-primary-bold;
 }
 
-.text-center {
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .text-center {
+    text-align: center;
+  }
 }
 
 // Links
