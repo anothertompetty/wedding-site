@@ -65,3 +65,17 @@ a:hover,
 a:active {
   color: $color-text;
 }
+
+a.menu-link:link, 
+a.menu-link:visited, 
+a.menu-link:hover, 
+a.menu-link:active {
+  color: $color-text;
+  text-decoration: none;
+}
+
+a.menu-link:hover, 
+a.menu-link:active {
+  color: $color-text;
+  text-decoration: underline;
+}
