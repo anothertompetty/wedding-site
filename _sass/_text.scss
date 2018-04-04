@@ -24,6 +24,12 @@ h2 {
   margin: 0;
 }
 
+@media screen and (max-width: 480px) {
+  h2 {
+    letter-spacing: 1.5px;
+  }
+}
+
 .header_content h2 {
   margin-top: -50px;
 }
